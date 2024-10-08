@@ -37,22 +37,16 @@ Ao final deve se exibir uma mensagem:
   guerreiro atacou usando espada
   */
 
-  let heroi = {
-    nome: "Marcus",
-    idade: 30,
-    tipo: "Mago"
+  class heroi{
+    constructor(nomeHeroi, idadeHeroi, tipoHeroi){
+        this.nomeHeroi = nomeHeroi
+        this.idadeHeroi = idadeHeroi
+        this.tipoHeroi = tipoHeroi
+    }
   }
 
-personagem(heroi)
-
-  function personagem(heroi){
-    console.log(`Iniciando com o heroi... ${heroi.nome} com a idade de ${heroi.idade} anos, da classe: ${heroi.tipo}`)
-  }
- 
-
-
-
-
+  let personagem = new heroi("Marcus", 30, "Mago")
+  console.log(personagem)
 
     
 
